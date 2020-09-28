@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container-fluid px-0">
+<body class="h-100v over-y-none">
+    <div class="container-fluid px-0 h-100">
         <nav class="navbar navbar-dark primary-color">
             <span class="navbar-brand">Industrial Control Application</span>
         </nav>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center">
-                    <button type="button" class="btn btn-success" onClick="light()">Success</button>
-                    <button type="button" class="btn btn-danger" onClick="dark()">Danger</button>
-                </div>
-                <div id="bulb-off" class="col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="container-fluid h-100">
+            <div class="d-flex flex-column h-100">
+                <div id="bulb-off" class="container-fluid d-flex justify-content-center align-items-center h-70v">
                     <svg xmlns="http://www.w3.org/2000/svg" width="220.004" height="320" viewBox="0 0 220.004 320">
                         <path id="lightbulb-regular" d="M110,50a60.065,60.065,0,0,0-60,60,10,10,0,1,0,20,0,40.046,40.046,0,0,1,40-40,10,10,0,1,0,0-20ZM60.039,286.987a9.936,9.936,0,0,0,1.675,5.525l15.319,23.025A10.005,10.005,0,0,0,85.358,320H134.64a9.989,9.989,0,0,0,8.325-4.463l15.319-23.025a10.052,10.052,0,0,0,1.675-5.525L159.991,260H60.014ZM110,0C46.076,0,0,51.857,0,110a109.389,109.389,0,0,0,27.226,72.364c10.4,11.869,26.713,36.751,32.763,57.6V240h30v-.075a29.572,29.572,0,0,0-1.344-8.794,197.077,197.077,0,0,0-38.857-68.545A79.753,79.753,0,0,1,30.032,110C29.907,63.976,67.326,30,110,30a79.945,79.945,0,0,1,60.22,132.59A197.52,197.52,0,0,0,131.409,231a29.692,29.692,0,0,0-1.388,8.938V240h30v-.031c6.05-20.857,22.363-45.738,32.763-57.6A109.952,109.952,0,0,0,110,0Z"/>
                     </svg>
                 </div>
-                <div id="bulb-on" class="col-md-6 col-sm-12 d-none justify-content-center">
+                <div id="bulb-on" class="container-fluid d-none justify-content-center align-items-center h-70v">
                     <svg xmlns="http://www.w3.org/2000/svg" width="219.995" height="320" viewBox="0 0 219.995 320">
                         <path id="lightbulb-solid" d="M60.036,283.962a20.008,20.008,0,0,0,3.35,11.056l10.681,16.056A19.993,19.993,0,0,0,90.717,320h38.568a19.993,19.993,0,0,0,16.649-8.925l10.681-16.056a19.993,19.993,0,0,0,3.35-11.056l.025-23.968H60l.031,23.968ZM0,110a109.384,109.384,0,0,0,27.224,72.361c10.325,11.781,26.474,36.393,32.631,57.155.025.162.044.325.069.487H160.072c.025-.163.044-.319.069-.487,6.156-20.762,22.306-45.374,32.631-57.155A109.938,109.938,0,0,0,109.654,0C45.9.193,0,51.855,0,110ZM110,60a50.057,50.057,0,0,0-50,50,10,10,0,0,1-20,0,70.075,70.075,0,0,1,70-70,10,10,0,0,1,0,20Z" transform="translate(0 0.001)" fill="#fc0"/>
                     </svg>                      
+                </div>
+                <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+                    <button type="button" class="btn btn-success w-300p" onClick="light()">Success</button>
+                    <button type="button" class="btn btn-danger w-300p" onClick="dark()">Danger</button>
                 </div>
             </div>
         </div>
