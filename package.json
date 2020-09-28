@@ -2,9 +2,10 @@
   "name": "industrial-control-application",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron . --no-sandbox"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/z3t4z00k/Industrial-Control-APplication/issues"
   },
-  "homepage": "https://github.com/z3t4z00k/Industrial-Control-APplication#readme"
+  "homepage": "https://github.com/z3t4z00k/Industrial-Control-APplication#readme",
+  "devDependencies": {
+    "electron": "10.1.2"
+  }
 }
