@@ -1,0 +1,19 @@
+{
+  "name": "industrial-control-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z3t4z00k/Industrial-Control-APplication.git"
+  },
+  "author": "z3t4z00k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z3t4z00k/Industrial-Control-APplication/issues"
+  },
+  "homepage": "https://github.com/z3t4z00k/Industrial-Control-APplication#readme"
+}
