@@ -2,7 +2,7 @@ const { app, BrowserWindow, Menu } = require ('electron')
 
 function createWindow (){
     const win = new BrowserWindow({
-        width: 1000, height:800,
+        width: 600, height:800, frame: false,
         webPreferences: {
             nodeIntegration: true
         }
@@ -10,7 +10,7 @@ function createWindow (){
 
     win.loadFile('index.html')
 
-    win.webContents.openDevTools()
+    //win.webContents.openDevTools()
 
     var menu = Menu.buildFromTemplate([{
         label: 'Menu',
