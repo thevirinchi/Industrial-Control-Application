@@ -1,3 +1,10 @@
+const {app} = require('electron')
+
+function clos(){
+    console.log("closing")
+    app.exit(0)
+}
+
 function light(){
     var bulbOff = document.getElementById('bulb-off')
     bulbOff.classList.remove("d-flex")
