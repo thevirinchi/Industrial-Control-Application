@@ -5,6 +5,10 @@ function light(){
     var bulbOn = document.getElementById('bulb-on')
     bulbOn.classList.remove("d-none")
     bulbOn.classList.add("d-flex")
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://54.237.104.99:443/bulbstate/1", true);
+    xhr.send()
 }
 function dark(){
     var bulbOff = document.getElementById('bulb-off')
@@ -13,4 +17,8 @@ function dark(){
     var bulbOn = document.getElementById('bulb-on')
     bulbOn.classList.remove("d-flex")
     bulbOn.classList.add("d-none")
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://54.237.104.99:443/bulbstate/0", true);
+    xhr.send()
 }
