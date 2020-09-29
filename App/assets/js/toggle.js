@@ -22,3 +22,15 @@ function dark(){
     xhr.open("POST", "http://54.237.104.99:443/bulbstate/0", true);
     xhr.send()
 }
+function check(){
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://54.237.104.99:443/bulbstate", false);
+    xhr.send(null)
+    var state = JSON.parse(xhr.responseText).state
+    if(state==1){
+        console.log("light")
+        light()}
+    else{
+        console.log("dark")
+        dark()}
+}
