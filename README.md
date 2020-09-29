@@ -1,1 +1,1 @@
-# Industrial-Control-APplication
+# Industrial-Control-Application
